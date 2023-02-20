@@ -33,7 +33,7 @@
             <li class="head-nav-item">
               <a
                 href="./index.html"
-                class="head-nav-link links"
+                class="head-nav-link head-nav-link-active links"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
                 >Studio</a
@@ -85,7 +85,9 @@
           <h1 class="hero-title hero-studio-title">
             Effective Solutions for Your Business
           </h1>
-          <button class="hero-studio-bt bt" type="button">Order Service</button>
+          <button class="hero-studio-bt bt" data-modal-open type="button">
+            Order Service
+          </button>
         </div>
       </section>
       <!-- 2ND Block -->
@@ -655,5 +657,20 @@
         </div>
       </div>
     </footer>
+    <!-- MODAL WINDOW -->
+    <div class="modal-backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button
+          data-modal-close
+          type="button"
+          class="modal-close-bt modal-close-bt-active bt"
+        >
+          <svg class="modal-close-bt-icon" width="8" height="8">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
